@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Naughts &amp; Crosses</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <main>
+      <form class="pages players-selection">
+        <p>How do you want to play?</p>
+        <input type="radio" name="players" id="one-player" value="1">
+        <label for="one-player">One Player</label>
+        <input type="radio" name="players" id="two-player" value="2">
+        <label for="two-player">Two Player</label>
+      </form>
+      <form class="pages symbol-selection hidden">
+        <p>Would you like to be X or O?</p>
+        <input type="radio" name="symbol" id="symbol-select-x" value="x">
+        <label for="symbol-select-x">X</label>
+        <input type="radio" name="symbol" id="symbol-select-o" value="o">
+        <label for="symbol-select-o">O</label>
+      </form>
+      <section class="pages grid hidden">
+        <div class="box" id="0"></div>
+        <div class="box" id="1"></div>
+        <div class="box" id="2"></div>
+
+        <div class="box" id="3"></div>
+        <div class="box" id="4"></div>
+        <div class="box" id="5"></div>
+
+        <div class="box" id="6"></div>
+        <div class="box" id="7"></div>
+        <div class="box" id="8"></div>
+      </section>
+      <button>Back</button>
+    </main>
+  </body>
+</html>

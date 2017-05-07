@@ -1,0 +1,28 @@
+*,
+*:after,
+*:before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+.grid {
+        width: 18rem;
+        clear: both;
+        overflow: auto;
+}
+.box {
+        width: 6rem;
+        height: 6rem;
+        border-right: 5px solid;
+        border-bottom: 5px solid;
+        float: left;
+}
+.box:hover {
+        background-color: lightgray;
+}
+.box:nth-child(3n) {
+        border-right: none;
+}
+.box:nth-last-child(-n + 3) {
+        border-bottom: none;
+}
